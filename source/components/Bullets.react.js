@@ -3,11 +3,12 @@ const Row = require ('react-bootstrap/lib/Row');
 const Col = require ('react-bootstrap/lib/Col');
 var logs = require("../utilities/logsMixin.js")
 
+var bulletsArray = ["Graphic Design","Web Design","Custom Sculpted Cakes","Event Planning"]
 
-const <NAME> = React.createClass({
+const Bullets = React.createClass({
 
 
-name: "<NAME>",
+name: "Bullets",
   mixins: [logs], //dont forget the comma
   PropTypes:{
     children:React.PropTypes.node
@@ -23,8 +24,23 @@ name: "<NAME>",
   //componentWillUpdate: function(){},
 
   render: function() {
+
+    var bull;
+
+    if (bulletsArray.length > 0) {
+    bull = bulletsArray.map(function(val, idx) {
+
+      return(
+        <Row key={idx}>
+          <Col xs={12}> - {val}</Col>
+        </Row>
+      )
+
+    })
+  }
+
     return (
-      <div>TEMPLATE</div>
+      <div>{bull}</div>
   )
 
 },
@@ -33,4 +49,4 @@ name: "<NAME>",
 
 });
 
-module.exports = <NAME>
+module.exports = Bullets

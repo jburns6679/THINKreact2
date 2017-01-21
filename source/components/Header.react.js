@@ -1,29 +1,19 @@
 const React = require('react');
-var logs = require('../utilities/logsMixin.js')
+var logs = require("../utilities/logsMixin.js")
 const Row = require ('react-bootstrap/lib/Row');
 const Col = require ('react-bootstrap/lib/Col');
 
-const bannerStyle ={
-  backgroundColor:"#333"
-  // height:"400px",
-  // width:"100%"
+const headerStyle ={
+  color:"blue"
 }
 
-const imageStyle ={
-  width:'100%',
-  height:"auto"
-}
+const Header = React.createClass({
 
-const Banner = React.createClass({
-
-name: "Banner",
-mixins: [logs], //dont forget the comma
-propTypes:{
-  title:React.PropTypes.string,
-  children:React.PropTypes.node
-},
-
-
+name: "Header",
+  mixins: [logs], //dont forget the comma
+  PropTypes:{
+    children:React.PropTypes.node
+  },
 
   //-----default API-------
   //getDefaultProps: function(){},
@@ -36,10 +26,9 @@ propTypes:{
 
   render: function() {
     return (
-      <Row style={bannerStyle}>
-        <img style={imageStyle} src="./img/bannerimage.jpg" />
-
-      </Row>
+      <h2 style={headerStyle}>
+        {this.props.children}
+      </h2>
   )
 
 },
@@ -48,4 +37,4 @@ propTypes:{
 
 });
 
-module.exports = Banner
+module.exports = Header
