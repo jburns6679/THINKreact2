@@ -1,6 +1,10 @@
 const React = require('react');
 var logs = require("../utilities/logsMixin.js")
+const Row = require ('react-bootstrap/lib/Row');
+const Col = require ('react-bootstrap/lib/Col');
+
 const <NAME> = React.createClass({
+
 
 name: "<NAME>",
   mixins: [logs], //dont forget the comma
