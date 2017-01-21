@@ -24,7 +24,10 @@ const Application = React.createClass({
           <Header>Bullets</Header>
           <Bullets />
         </Section>
-        <Section><Header>Photos</Header></Section>
+        <Section>
+          <Header>Photos</Header>
+          <Photos />
+        </Section>
         <Section><Header>Tweets</Header></Section>
       </div>);
   }
