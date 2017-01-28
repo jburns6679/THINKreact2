@@ -1,20 +1,25 @@
 import React from 'react';
 
+const userstyle ={
+  color:'#333',
+  fontStyle:'bold'
+}
+
 const style ={
   color:'#333'
 }
 
 const datestyle ={
-  font style:'italic'
+  fontStyle:'italic'
 }
 
 
 const tweet = (date, text, user) => (
 
   <div>
-    <span>{user}</span>
+    <div style={userstyle}><span>{user}</span></div>
     <div style={style}><span>{text}</span></div>
-    <div datestyle={style}><span>{date}</span></div>
+    <div style={datastyle}><span>{date}</span></div>
   </div>
 
 );
