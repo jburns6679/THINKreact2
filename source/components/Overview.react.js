@@ -13,7 +13,7 @@ const text ="Aliquam erat volutpat. Sed at ante volutpat, lobortis risus vel, co
 const Overview = React.createClass({
 
 name: "Overview",
-  mixins: [logs], //dont forget the comma
+//  mixins: [logs], //dont forget the comma
   PropTypes:{
     children:React.PropTypes.node
   },

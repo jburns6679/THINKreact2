@@ -9,7 +9,7 @@ const Bullets = React.createClass({
 
 
 name: "Bullets",
-  mixins: [logs], //dont forget the comma
+//  mixins: [logs], //dont forget the comma
   PropTypes:{
     children:React.PropTypes.node
   },

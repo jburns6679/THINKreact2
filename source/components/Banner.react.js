@@ -17,7 +17,7 @@ const imageStyle ={
 const Banner = React.createClass({
 
 name: "Banner",
-mixins: [logs], //dont forget the comma
+// mixins: [logs], //dont forget the comma
 propTypes:{
   title:React.PropTypes.string,
   children:React.PropTypes.node

@@ -11,7 +11,7 @@ const sectionStyle = {
 const Section = React.createClass({
 
   name: "Section",
-  mixins: [logs], //dont forget the comma
+//  mixins: [logs], //dont forget the comma
   propTypes:{
     title:React.PropTypes.string,
     children:React.PropTypes.node

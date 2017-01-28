@@ -1,9 +1,9 @@
 const React = require('react');
 const Row = require ('react-bootstrap/lib/Row');
 const Col = require ('react-bootstrap/lib/Col');
+import textBlock from "./textBlock.react.js"
+
 var logs = require("../utilities/logsMixin.js")
-
-
 const Tweets = React.createClass({
 
 
@@ -24,7 +24,9 @@ name: "Tweets",
 
   render: function() {
     return (
-      <div>TEMPLATE</div>
+      <div>
+      {textBlock("today","some text", "@jburns")}
+    </div>
   )
 
 },

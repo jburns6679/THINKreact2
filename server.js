@@ -14,6 +14,28 @@ var server = function() {
       res.setHeader('Content-Type', 'text/html');
       res.send(fs.readFileSync('./views/index.html'));
     };
+
+
+///-------
+// this is a get request
+
+self.routes['/tweets'] = function(req, res) {
+
+// returns something
+var tweets = []
+tweets.push({date:"today", text:"I love tweets", user:"jburns"})
+tweets.push({date:"yesterday", text:"I like tweets", user:"jburns"})
+tweets.push({date:"tomorrow", text:"All work and no play makes for an unfulfilled life", user:"jburns"})
+
+  res.jsonp({"tweets":tweets});
+
+};
+
+
+///-------
+
+
+
   };
 
   self.initializeServer = function () {

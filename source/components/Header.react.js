@@ -10,7 +10,7 @@ const headerStyle ={
 const Header = React.createClass({
 
 name: "Header",
-  mixins: [logs], //dont forget the comma
+//  mixins: [logs], //dont forget the comma
   PropTypes:{
     children:React.PropTypes.node
   },

@@ -6,10 +6,11 @@ const Header = require('./Header.react.js');
 const Overview = require('./Overview.react.js');
 const Bullets = require('./Bullets.react.js');
 const Photos = require('./Photos.react.js');
+const Tweets = require('./Tweets.react.js');
 
 const Application = React.createClass({
   name:"Application",
-  mixins: [logs], //dont for get the comma
+//  mixins: [logs], //dont for get the comma
 
   //-----default API//
   render:function(){
@@ -28,7 +29,10 @@ const Application = React.createClass({
           <Header>Photos</Header>
           <Photos />
         </Section>
-        <Section><Header>Tweets</Header></Section>
+        <Section>
+          <Header>Tweets</Header>
+          <Tweets />
+        </Section>
       </div>);
   }
 });
